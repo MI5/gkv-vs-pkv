@@ -3,8 +3,9 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styles: []
+  styles: [':host { margin: 10px; display: block; }']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'GKV vs. PKV';
+  testNames = ['Maike', 'Katrin', 'Isabel'];
 }
