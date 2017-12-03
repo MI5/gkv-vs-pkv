@@ -26,3 +26,9 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## NPM TIPS
+
+npm view codelyzer versions           #see all available versions of this package
+sudo npm install codelyzer@4.0.1      #install specific version of a package
