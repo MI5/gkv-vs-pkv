@@ -19,7 +19,7 @@ export class BookListComponent implements OnInit {
       [new Thumbnail('https://ng-buch.de/cover2.jpg', 'Buchcover')], 'Mit Angular setzen Sie auf ein modernes und modulares Framework.'),
       new Book('353643643', 'Siddhartha', ['Hermann Hesse'], new Date(1922, 11, 1),
       'Eine indische Dichtung', 5,
-      [new Thumbnail('https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Siddhartha_-_1_von_50_nummerierten_und_signierten_Exemplaren_der_Vorzugsausgabe.JPG/800px-Siddhartha_-_1_von_50_nummerierten_und_signierten_Exemplaren_der_Vorzugsausgabe.JPG', 'Buchcover')], 'Ein tiefgreifendes Buch über....')
+      [new Thumbnail('http://www.suhrkamp.de/cover/200/18802.jpg', 'Buchcover')], 'Ein tiefgreifendes Buch über....')
   ];
   }
 
