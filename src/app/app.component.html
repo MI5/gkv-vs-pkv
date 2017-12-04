@@ -1,5 +1,5 @@
-<app-book-list *ngIf="listOn"></app-book-list>
-<app-book-details *ngIf="detailsOn" [book]="book"></app-book-details>
+<app-book-list *ngIf="listOn" (showDetailsEvent)="showDetails($event)"></app-book-list>
+<app-book-details *ngIf="detailsOn" (showListEvent)="showList()" [book]="book"></app-book-details>
 
 <div style="text-align:center">
   <h1>

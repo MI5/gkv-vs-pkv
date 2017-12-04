@@ -8,11 +8,22 @@ import { Book } from './shared/book';
   styles: [':host { margin: 10px; display: block; }']
 })
 export class AppComponent {
+  title = 'GKV vs. PKV';
+  testNames = ['Maike', 'Katrin', 'Isabel'];
+
   listOn = true;
   detailsOn = false;
 
   book: Book;
 
-  title = 'GKV vs. PKV';
-  testNames = ['Maike', 'Katrin', 'Isabel'];
+  showList() {
+    this.listOn = true;
+    this.detailsOn = false;
+  }
+
+  showDetails(book: Book) {
+    this.book = book;
+    this.listOn = false;
+    this.detailsOn = true;
+  }
 }

@@ -1,3 +1,3 @@
 <div class="ui middle aligned selection divided list">
-  <a class="app-book-list-item item" *ngFor="let b of books" [book]="b"></a>
+  <a class="app-book-list-item item" *ngFor="let b of books" [book]="b" (click)="showDetailsClicked(b)"></a>
 </div>
