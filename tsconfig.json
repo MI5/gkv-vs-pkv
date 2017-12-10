@@ -1,13 +1,15 @@
 {
   "compileOnSave": false,
-  "compilerOptions": {
+  "compilerOptions": { // https://www.typescriptlang.org/docs/handbook/compiler-options.html
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "noImplicitAny": true, // MBL experimental: I added this
+    "strict": true, // MBL experimental: I added this
+    "noUnusedLocals": true, // MBL experimental: I added this
+    "noUnusedParameters": true, // MBL experimental: I added this
     "target": "es5",
     "typeRoots": [
       "node_modules/@types"
