@@ -14,6 +14,7 @@ import { ExampleAnimationComponent } from './example-animation/example-animation
 
 // Services
 import { BookStoreService } from './shared/book-store.service';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { BookStoreService } from './shared/book-store.service';
     BookListComponent,
     BookListItemComponent,
     BookDetailsComponent,
-    ExampleAnimationComponent
+    ExampleAnimationComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
