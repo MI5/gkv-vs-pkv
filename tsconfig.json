@@ -7,9 +7,9 @@
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "strict": true, // MBL experimental: I added this
-    "noUnusedLocals": true, // MBL experimental: I added this
-    "noUnusedParameters": true, // MBL experimental: I added this
+    "strict": true, // mbl experimental: I added this
+    "noUnusedLocals": true, // mbl experimental: I added this
+    "noUnusedParameters": true, // mbl experimental: I added this
     "target": "es5",
     "typeRoots": [
       "node_modules/@types"
