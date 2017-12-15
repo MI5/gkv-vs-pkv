@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material';
@@ -16,6 +15,9 @@ import { ExampleAnimationComponent } from './example-animation/example-animation
 import { BookStoreService } from './shared/book-store.service';
 import { HomeComponent } from './home/home.component';
 
+// Modules
+import { AppRoutingModule } from './app-routing.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +29,7 @@ import { HomeComponent } from './home/home.component';
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule
   ],
