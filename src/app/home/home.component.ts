@@ -3,9 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-home',
   template: `
-    <p>
-      home works!
-    </p>
+    <a routerLink="../books" class="ui red button">
+    Buchliste ansehen
+    <i class="right arrow icon"></i>
+    </a>
   `,
   styles: []
 })
