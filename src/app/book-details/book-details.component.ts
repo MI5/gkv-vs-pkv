@@ -10,8 +10,7 @@ import { BookStoreService } from './../shared/book-store.service';
   styles: []
 })
 export class BookDetailsComponent implements OnInit {
-  /* @Input() */ book: Book|undefined;
-  // @Output() showListEvent = new EventEmitter<any>();
+  book: Book|undefined;
 
   constructor(
     private bs: BookStoreService,
@@ -26,8 +25,4 @@ export class BookDetailsComponent implements OnInit {
   getRating(num: number) {
     return new Array(num);
   }
-
-  // showBookList() {
-  //   this.showListEvent.emit();
-  // }
 }

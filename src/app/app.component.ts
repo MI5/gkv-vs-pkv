@@ -4,8 +4,6 @@ import { ViewportRuler } from '@angular/cdk/scrolling';
 /*import { UP_ARROW, DOWN_ARROW, RIGHT_ARROW, LEFT_ARROW, PAGE_UP, PAGE_DOWN, HOME, END, ENTER, SPACE, TAB, ESCAPE, BACKSPACE, DELETE,
   A, Z, ZERO, NINE, COMMA } from '@angular/cdk/keycodes';*/
 
-import { Book } from './shared/book';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -14,11 +12,6 @@ import { Book } from './shared/book';
 export class AppComponent {
   title = 'GKV vs. PKV';
   testNames = ['Maike', 'Katrin', 'Isabel'];
-
-  listOn = true;
-  detailsOn = false;
-
-  book: Book;
 
   constructor(private _platform: Platform, private _ruler: ViewportRuler) {
     const showDebugInfo = true;
@@ -47,16 +40,5 @@ export class AppComponent {
       // native resize event object
       this._ruler.change().subscribe(resizeEvent => console.log(resizeEvent));
     }
-  }
-
-  showList() {
-    this.listOn = true;
-    this.detailsOn = false;
-  }
-
-  showDetails(book: Book) {
-    this.book = book;
-    this.listOn = false;
-    this.detailsOn = true;
   }
 }
