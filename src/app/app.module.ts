@@ -18,6 +18,7 @@ import { HomeComponent } from './home/home.component';
 
 // Modules
 import { AppRoutingModule } from './app-routing.module';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AppRoutingModule } from './app-routing.module';
     BookListItemComponent,
     BookDetailsComponent,
     ExampleAnimationComponent,
-    HomeComponent
+    HomeComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
